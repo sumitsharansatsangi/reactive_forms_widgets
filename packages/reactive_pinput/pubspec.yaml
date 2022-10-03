@@ -2,17 +2,18 @@ name: reactive_pinput
 description: Wrapper around pinput to use with reactive_forms.
 version: 0.5.0
 repository: https://github.com/artflutter/reactive_forms_widgets
+publish_to: none
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.18.2 <3.0.0"
   flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   reactive_forms: ^14.1.0
-  pinput: ^2.2.11
-  smart_auth: ^1.0.5
+  pinput:
+    git: https://github.com/sumitsharansatsangi/Flutter_Pinput.git
 
 dev_dependencies:
   flutter_test:
