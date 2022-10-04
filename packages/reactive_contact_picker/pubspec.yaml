@@ -13,7 +13,11 @@ dependencies:
     sdk: flutter
   reactive_forms:
     git: https://github.com/sumitsharansatsangi/reactive_forms.git
-  fluttercontactpicker: ^4.7.0
+  fluttercontactpicker:
+    git:
+      url: https://github.com/Efim-Kozhemyakin/contact_picker.git
+      ref: feature/to_map
+      path: ./contact_picker
 
 dev_dependencies:
   flutter_test:
