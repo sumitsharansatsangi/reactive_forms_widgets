@@ -11,7 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  reactive_forms: ^14.1.0
+  reactive_forms:
+    git: https://github.com/sumitsharansatsangi/reactive_forms.git
   pinput:
     git: https://github.com/sumitsharansatsangi/Flutter_Pinput.git
 
