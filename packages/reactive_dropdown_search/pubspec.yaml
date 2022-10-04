@@ -13,7 +13,8 @@ dependencies:
     sdk: flutter
   reactive_forms:
     git: https://github.com/sumitsharansatsangi/reactive_forms.git
-  dropdown_search: ^5.0.3
+  dropdown_search:
+    git: https://github.com/sumitsharansatsangi/searchable_dropdown.git
 
 dev_dependencies:
   flutter_test:

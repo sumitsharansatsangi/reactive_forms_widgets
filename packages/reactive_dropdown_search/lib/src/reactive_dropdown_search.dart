@@ -107,6 +107,10 @@ class ReactiveDropdownSearch<T, V> extends ReactiveFormField<T, V> {
     DropDownDecoratorProps dropdownDecoratorProps =
         const DropDownDecoratorProps(),
     BeforePopupOpening<V>? onBeforePopupOpening,
+    final bool isIconBased = false,
+
+    ///Icon, By Pressing on which DIALOG, BOTTOM_SHEET, MENU will open
+    final Widget? icon,
   }) : super(
           key: key,
           formControl: formControl,
@@ -125,6 +129,8 @@ class ReactiveDropdownSearch<T, V> extends ReactiveFormField<T, V> {
             state._setFocusNode(focusNode);
 
             return DropdownSearch<V>(
+              isIconBased: isIconBased,
+              icon: icon,
               onChanged: field.didChange,
               popupProps: popupProps,
               selectedItem: field.value,

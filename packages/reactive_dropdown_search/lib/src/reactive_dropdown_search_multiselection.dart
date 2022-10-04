@@ -108,6 +108,10 @@ class ReactiveDropdownSearchMultiSelection<T, V>
     DropDownDecoratorProps dropdownDecoratorProps =
         const DropDownDecoratorProps(),
     BeforePopupOpeningMultiSelection<V>? onBeforePopupOpening,
+    final bool isIconBased = false,
+
+    ///Icon, By Pressing on which DIALOG, BOTTOM_SHEET, MENU will open
+    final Widget? icon,
   }) : super(
           key: key,
           formControl: formControl,
@@ -127,6 +131,8 @@ class ReactiveDropdownSearchMultiSelection<T, V>
             state._setFocusNode(focusNode);
 
             return DropdownSearch<V>.multiSelection(
+              isIconBased: isIconBased,
+              icon: icon,
               onChanged: field.didChange,
               popupProps: popupProps,
               selectedItems: field.value ?? [],
