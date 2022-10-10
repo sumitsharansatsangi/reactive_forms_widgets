@@ -13,8 +13,7 @@ dependencies:
     sdk: flutter
   reactive_forms:
     git: https://github.com/sumitsharansatsangi/reactive_forms.git
-  intl:
-    git: https://github.com/dart-lang/intl.git
+  intl: ^0.17.0
   flutter_touch_spin:
     git: https://github.com/sumitsharansatsangi/flutter_touch_spin.git
 
