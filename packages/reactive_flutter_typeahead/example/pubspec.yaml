@@ -31,6 +31,9 @@ dependencies:
     sdk: flutter
   reactive_flutter_typeahead:
     path: ../
+  reactive_forms:
+    git:
+      url: https://github.com/sumitsharansatsangi/reactive_forms.git
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
